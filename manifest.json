@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "live progress",
+  "version": "1.0",
+  "description": "A simple volume controller that works across all websites, letting you adjust web audio easily without changing system volume",
+  "permissions": ["storage", "tabs"],
+  "icons": {
+    "16": "volume.png",
+    "48": "volume.png",
+    "128": "volume.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "volume.png",
+      "32": "volume.png",
+      "48": "volume.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
