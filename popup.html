@@ -7,7 +7,7 @@
         width: 320px;
         padding: 20px;
         font-family: Arial, sans-serif;
-        background: #66070c;
+        background: #b94f4fe0;
         color: white;
       }
 
@@ -94,6 +94,22 @@
       .preset-btn:hover {
         background: rgba(255, 255, 255, 0.4);
       }
+      .star {
+        padding-top: 15px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 8px;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+      }
+
+      .link img {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -115,11 +131,14 @@
         <button class="preset-btn" data-volume="100">100%</button>
       </div>
       <div class="status" id="status">Volume applied to all tabs</div>
-      <div>
-        If you like this project, give it a star on GitHub:
-        <a href="https://github.com/epyy1/live-progress" target="_blank"
-          >GitHub</a
+      <div class="star">
+        <a
+          href="https://github.com/epyy1/live-progress"
+          target="_blank"
+          class="link"
         >
+          <img src="./github.svg" alt="GitHub" width="20" height="20" />
+        </a>
       </div>
     </div>
 
